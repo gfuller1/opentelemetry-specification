@@ -21,8 +21,8 @@ The url of the request.
 key: `http.url`
 
 example:
-`key: http.url`
-`value: https://opentelemetry.io/`
+
+`http.url: https://opentelemetry.io/`
 
 #### method
 
@@ -31,15 +31,18 @@ The http method of the request, such as GET, PUT, DELETE, etc.
 key: `http.method`
 
 example:
-`key: http.method`
-`value: GET`
+
+`http.method: GET`
 
 #### status
 
-The status of the response. The value of this label must be a valid Span [`StatusCanonicalCode`](../../trace/api.md#statuscanonicalcode).
+The status of the response. The value of this label must be a valid Span
+[`StatusCanonicalCode`](../../trace/api.md#statuscanonicalcode).
 
-key: `http.status`
+key: `status`
+
+This is to match other non-http labels.
 
 example:
-`key: http.status`
-`value: OK`
+
+`status: OK`
