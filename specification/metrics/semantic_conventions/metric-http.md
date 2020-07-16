@@ -2,16 +2,18 @@
 
 The conventions described in this section are http specific.
 
+**Discaimer:** These are initial http labels but more may be added in the future.
+
 ## Summarizing http labels
 
 ### Justification
 
-Http calls are generally fully described by Spans. By adding labels
-to http metrics it allows for finely tuned aggregation on those metrics.
+Http calls are generally fully described by Spans. By adding http labels
+to metrics it allows for finely tuned aggregation on those metrics.
 
 ### Convention
 
-Below are the labels that should be added to http metrics if they exist on the span.
+Below are the http labels that should be added to metrics if they exist on the span.
 The label's name should be prefixed with `http`, such as `http.url`.
 
 #### url
